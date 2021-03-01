@@ -35,6 +35,7 @@ RUN R CMD javareconf \
       doParallel \
       dplyr \
       farver \
+      fastmap \
       flextable \
       foreach \
       gdtools \
@@ -42,6 +43,7 @@ RUN R CMD javareconf \
       ggplot2 \
       gtable \
       hms \
+      httpuv \
       isoband \
       iterators \
       labeling \
@@ -49,6 +51,7 @@ RUN R CMD javareconf \
       munsell \
       officer \
       openxlsx \
+      plyr \
       RColorBrewer \
       readr \
       rJava \
@@ -57,7 +60,9 @@ RUN R CMD javareconf \
       rlang \
       rmarkdown \
       scales \
+      shiny \
       snow \
+      sourcetools \
       systemfonts \
       tidyr \
       tinytex \
@@ -65,8 +70,11 @@ RUN R CMD javareconf \
       viridisLite \
       XML \
       xml2 \
+      xtable \
       zip \
-      SqlRender \
-      DatabaseConnector \
-      DatabaseConnectorJars
+   && installGithub.r \
+      OHDSI/ParallelLogger \
+      OHDSI/SqlRender \
+      OHDSI/DatabaseConnector \
+      OHDSI/DatabaseConnectorJars
 
